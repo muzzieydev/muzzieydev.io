@@ -398,6 +398,37 @@ nav{
     }
 }
 /* ==================== PROJECTS ==================== */
+.project-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    background:var(--accent);
+    color:var(--bg);
+
+    padding:10px 16px;
+    border-radius:7px;
+
+    font-size:13.5px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.project-link i{
+    font-size:11px;
+    transition:.3s;
+}
+
+.project-link:hover{
+    background:#ffffffb2;
+    color:var(--bg);
+    transform:translateY(-2px);
+}
+
+.project-link:hover i{
+    transform:translateX(3px);
+}
 .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
 .project-card{
   background:var(--bg-alt);border:1px solid var(--line);border-radius:var(--radius);
@@ -1071,7 +1102,7 @@ padding:20px;
 
 <nav>
 
-<a href="https://muzzieydev.github.io/landing.github.io" class="logo">
+<a href="index.html" class="logo">
     <img src="assets/images/finallogo.png" alt="Muzziey Toxin Logo">
 </a>
 <div class="nav-actions">
@@ -1103,8 +1134,8 @@ padding:20px;
 <section class="hero wrap" id="home">
   <div>
     <div class="eyebrow">Software Developer — Systems &amp; Products</div>
-    <h1>I write my own blueprint.<br>Then I <span>build it.</span></h1>
-    <p>Full stack developer designing custom software solutions, booking systems and business management platforms that help companies automate their operations and grow with fewer moving parts to worry about.</p>
+    <h1>NEED a WEBSITE?.<br>if/yes <span>lets build it.</span></h1>
+    <p>Full stack developer designing custom software solutions, booking systems and business management platforms that help companies,and small businesses automate their operations and grow with fewer moving parts to worry about.</p>
     <div class="buttons">
       <a href="#contact" class="btn-primary">Need A Website?</a>
      <a href="#projects" class="btn-secondary">Previous Work</a>
@@ -1219,7 +1250,7 @@ padding:20px;
   <div class="wrap">
     <div class="eyebrow">03 — Services</div>
     <div class="section-head">
-      <h2>What I build</h2>
+      <h2>What I Do</h2>
       <p>Every engagement starts with the same question: what is this software actually supposed to make easier? The answer decides everything that follows.</p>
     </div>
     <div class="services-grid">
@@ -1404,7 +1435,7 @@ your business grows.
       <div>
 <h2>I don't just build websites—</h2>
 
-<p>Software Developer • Entrepreneur • Creative Developer. I create custom websites, business management systems, mobile apps, e-commerce platforms, automation tools, branding, and digital experiences that help individuals, startups, and companies stand out and scale.</p>
+<p> Entrepreneur • Creative Developer. I create custom websites, business management systems, e-commerce platforms, automation tools and digital experiences that help individuals, startups, and companies stand out and scale.</p>
         <!-- SOCIAL ICONS -->
 <div style="margin-top:20px; display:flex; gap:14px; align-items:center;">
 
@@ -1455,6 +1486,53 @@ your business grows.
       <h2>Selected work</h2>
       <p>A few of the systems I've designed and built. Case studies available on request for more projects i send my cv </p>
     </div>
+    <!-- ==================== LIVE WEBSITE PROJECT ==================== -->
+<div class="project-card">
+
+    <div class="project-thumb">
+        <img 
+            src="j-peg.png" 
+            alt="Live Website Project"
+            style="width:100%; height:100%; object-fit:cover;"
+        >
+    </div>
+
+    <div class="project-body">
+
+        <span class="project-tag">Live Website</span>
+
+        <h3>Business Website</h3>
+
+        <p>
+            A fully responsive website designed and developed for a real client,
+            featuring a modern interface, responsive layouts and functional
+            store.
+        </p>
+
+        <div class="project-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Responsive</span>
+        </div>
+
+        <div class="project-actions">
+
+            <a 
+                href="https://j-peg.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+            >
+                Visit Live Website
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
     <div class="projects-grid">
       <div class="project-card">
         <div class="project-thumb">
@@ -1505,6 +1583,7 @@ Designed using PHP, MySQL and Bootstrap.
 
 </div>
   </div>
+  
 </section>
 
 <div class="divider"></div>
