@@ -1095,6 +1095,30 @@ padding:20px;
     border:1px solid var(--line);
 
 }
+  .back-btn{
+    position:fixed;
+    top:20px;
+    left:20px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:11px 16px;
+    background:rgba(0,0,0,0.65);
+    color:white;
+    text-decoration:none;
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:12px;
+    backdrop-filter:blur(12px);
+    font-size:13px;
+    font-weight:500;
+    z-index:9999;
+    transition:0.3s ease;
+}
+
+.back-btn:hover{
+    transform:translateX(-3px);
+    background:rgba(255,255,255,0.1);
+}
 </style>
 </head>
 
@@ -1188,7 +1212,10 @@ padding:20px;
 </section>
 
 <div class="divider"></div>
-
+<a href="https://YOUR-LANDING-PAGE-URL/" class="back-btn">
+    <i class="fas fa-arrow-left"></i>
+    Back
+</a>
 
 <!-- ==================== PRICING ==================== -->
 <section id="pricing">
